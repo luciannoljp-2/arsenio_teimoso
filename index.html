@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XDEL Tech Center</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="logo">
+      <a href="#home" class="nav-link"><img src="img/logo_xdel.png" alt="Logo XDEL Tech Center"></a>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <nav class="navbar">
+      <a href="#home" class="nav-link">Início</a>
+      <a href="#quem-somos" class="nav-link">Quem Somos</a>
+      <a href="#cursos" class="nav-link">Cursos</a>
+      <a href="#servicos" class="nav-link">Serviços</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+  </header>
+<div class="particles" id="particles"></div>
+  <!-- Página Inicial -->
+  <section id="home" class="secao-home">
+    <div class="home-overlay"></div>
+  <div class="home-conteudo">
+    <h1 class="headline">Vem com vontade que a XDEL te ensina o resto.</h1>
+    <h1 class="slogan-digitado-xdel code-line">
+  <span class="code">print(</span><span id="slogan-texto" class="code-string"></span><span class="code">)</span><span class="cursor">|</span>
+    </h1>
+    <div class="btn-group">
+      <a href="#cursos" class="btn">Quero Aprender</a>
+      <a href="#servicos" class="btn">Preciso de Ajuda Técnica</a>
+      <a href="#contato" class="btn">Fale Connosco</a>
+      </div>
+    </div>
+  </section>
+  <!-- Quem Somos -->
+  <section id="quem-somos" class="section">
+    <h2>Quem Somos</h2>
+    <p class="texto-formatado">O XDEL Tech Center é um centro de formação profissional especializado nas áreas das Tecnologias da Informação e Comunicação (TIC). 
+      Com uma abordagem moderna, prática e centrada no aluno, oferecemos cursos e programas de capacitação em programação, redes, 
+      segurança informática, design gráfico, robótica, inteligência artificial e muito mais.
+
+Nosso compromisso é transformar o potencial tecnológico dos nossos formandos em competências aplicáveis e relevantes, capazes de gerar impacto 
+real na sociedade e no mercado de trabalho. Acreditamos no poder da educação tecnológica como motor de transformação social e desenvolvimento 
+sustentável</p>
+    <section id="valores">
+      <div class="cards">
+        <div class="card">
+          <h3>Missão</h3>
+          <p>Formar profissionais altamente capacitados e inovadores na área das Tecnologias da Informação, 
+            promovendo o desenvolvimento de competências técnicas, criativas e éticas, alinhadas às exigências 
+            do mercado global e à transformação digital.</p>
+        </div>
+        <div class="card">
+          <h3>Visão</h3>
+          <p>Ser reconhecido como um centro de excelência em formação tecnológica em Angola e em toda a África 
+            lusófona, impulsionando talentos que contribuam para a inovação, o empreendedorismo e o progresso 
+            digital da sociedade.
+</p>
+        </div>
+        <div class="card">
+          <h3>Valores</h3>
+          <p>Inovação, inclusão, compromisso e excelência.</p>
+        </div>
+      </div>
+    </section>
+   
+  <!-- Cursos -->
+  <section id="cursos" class="section">
+    <h2>Nossos Cursos</h2>
+
+    <!-- O div particles duplicado foi removido daqui, pois já existe um no início do body -->
+    
+    <div class="floating-cards" id="cards-container-cursos">
+        <!-- Os cards serão gerados dinamicamente pelo JavaScript -->
+    </div>
+
+    <!-- O botão toggle-mais e o div cursos-toggle foram removidos, pois a nova implementação não usa mais essa funcionalidade -->
+    <div class="cursos-toggle" style="text-align: center; margin-top: 20px;">
+      <button id="toggle-mais" class="btn">
+        <!-- Ícone de mais -->
+        <svg id="plus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4V20M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <!-- Ícone de menos (inicialmente escondido) -->
+        <svg id="minus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section">
+    <h2>Serviços Tecnológicos</h2>
+    <div class="floating-cards" id="cards-container-servicos">
+        <!-- Os cards de serviço serão gerados dinamicamente pelo JavaScript -->
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <h2>Fale Connosco</h2>
+    <form>
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="email" placeholder="Seu Email" required>
+      <textarea placeholder="Sua Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="contato-info">
+      <!-- WhatsApp -->
+      <div class="icon-text">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#25D366" d="M17.472 14.621c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/244933474994" target="_blank">+244 933 474 994</a></p>
+      </div>
+      
+      <!-- Telefone -->
+      <div class="icon-text">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.46.57 3.57c.12.35.03.75-.24 1.02l-2.2 2.2z"/>
+        </svg>
+        <p><strong>Telefone:</strong> <a href="tel:+244999000000">+244 933 474 994 | 951 577 575</a></p>
+      </div>
+
+      <!-- Facebook -->
+      <div class="icon-text">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M12 2.04C6.5 2.04 2 6.53 2 12.04c0 5.04 3.66 9.23 8.44 9.93v-7.07H7.9v-2.86h2.54V9.7c0-2.51 1.53-3.88 3.76-3.88c1.08 0 2.01.19 2.28.28v2.5h-1.47c-1.2 0-1.44.57-1.44 1.41v1.85h2.89l-.47 2.86h-2.42v7.07C19.34 21.27 23 17.08 23 12.04C23 6.53 18.5 2.04 12 2.04z"/>
+        </svg>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/xdeltechcenter" target="_blank">/xdeltechcenter</a></p>
+      </div>
+
+      <!-- Gmail -->
+      <div class="icon-text">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/>
+        </svg>
+        <p><strong>Email:</strong> <a href="mailto:xdeltech@gmail.com">xdeltechcenter@gmail.com</a></p>
+      </div>
+
+      <!-- Endereço -->
+      <div class="icon-text">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+        </svg>
+        <p><strong>Endereço:</strong> Centralidade do Sequele | Bloco 6 | Prédio 17 | Entrada B | Apartamento 301 | Icolo e Bengo - Angola</p>
+      </div>
+
+      <!-- Mapa -->
+      <iframe src="https://maps.google.com/maps?q=Luanda&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p style="text-align: center;">&copy; 2025 XDEL Tech Center. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
